@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — PhD Shodh</title>
+  <meta name="description" content="Contact PhD Shodh — book a consultation or request a quote." />
+  <link rel="stylesheet" href="assets/css/pro-style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="assets/images/logo.png" alt="PhD Shodh logo"></a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h1>Contact & Bookings</h1>
+    <p>For a quick response, WhatsApp us or fill the form below.</p>
+
+    <p><strong>Email:</strong> <a href="mailto:samay25@gmail.com.com">samay25@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919406906110?text=Hello%20PhD%20Shodh" target="_blank">Message on WhatsApp</a></p>
+
+    <!-- Replace the action URL with your Formspree endpoint -->
+    <form class="contact-form" action="https://formspree.io/f/your-endpoint" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>
+        Phone (optional)
+        <input type="text" name="phone">
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+
+      <!-- Optional: hidden fields for subject/source -->
+      <input type="hidden" name="_subject" value="New enquiry from phdshodh.com">
+      <input type="hidden" name="_language" value="en">
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="muted">We typically reply within 24 hours on business days.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="yr-contact"></span> PhD Shodh</p>
+    </div>
+  </footer>
+
+<script>document.getElementById('yr-contact').innerText = new Date().getFullYear();</script>
+</body>
+</html>
