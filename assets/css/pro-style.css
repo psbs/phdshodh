@@ -42,3 +42,15 @@ button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;b
   .nav{display:none}
   .wrap{padding:14px}
 }
+.hero-image {
+  max-width: 420px;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
