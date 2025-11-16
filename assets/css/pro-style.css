@@ -248,3 +248,84 @@ img{max-width:100%;height:auto;display:block}
   .wrap{padding:12px}
   .card{padding:12px}
 }
+
+/* =========================
+   Patch: buttons, nav z-index, small layout fixes
+   Append this at the end of pro-style.css
+   ========================= */
+
+/* Buttons (primary + outline) */
+.btn-primary,
+a.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(11,97,164,0.08);
+  border: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.btn-primary:hover,
+a.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(11,97,164,0.10); }
+.btn-outline,
+a.btn-outline {
+  display:inline-block;
+  padding: 8px 14px;
+  border-radius:8px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight:700;
+  background: transparent;
+}
+.actions a { margin-right: 12px; }
+
+/* Make sure anchor CTAs (in header nav) look consistent */
+.nav a.cta { background: var(--accent); color: #fff; padding: 8px 12px; border-radius: 8px; }
+
+/* Ensure hero image doesn't blow out the layout on very wide screens */
+.hero-image { max-width: 480px; width: 100%; }
+@media (min-width:1100px) {
+  .hero-image { max-width: 520px; }
+}
+
+/* Ensure header/menu toggle sits above the dropdown nav and content */
+.site-header { z-index: 120; }
+.menu-toggle { position: relative; z-index: 130; background: #fff; border: 1px solid rgba(0,0,0,0.03); }
+.menu-toggle .bar { background: var(--accent-dark); }
+
+/* Keep collapsed nav above page content but below the toggle for click visibility */
+.nav {
+  z-index: 125;
+  top: calc(var(--header-h) + 12px); /* a little more breathing room */
+  left: 8px;
+  right: 8px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* Ensure .nav.open uses full width on very small screens but keeps small margins */
+.nav.open { display:flex !important; }
+
+/* Prevent clipping on some mobile browsers */
+header.site-header { overflow: visible; }
+
+/* Small tweak: ensure focus outlines are visible for keyboard users */
+.nav a:focus, .menu-toggle:focus, .btn-primary:focus, .btn-outline:focus {
+  outline: 3px solid rgba(11,97,164,0.12);
+  outline-offset: 2px;
+}
+
+/* Minor aesthetic: spacing for hero action links on desktop */
+@media (min-width:720px) {
+  .actions { margin-top: 8px; }
+}
+
+/* if you use .cta-strip button, ensure contrast */
+.cta-strip .btn-primary { background: #fff; color: var(--accent); text-decoration:none; }
+
+/* final safety: ensure images are not taller than their container */
+img { max-width:100%; height:auto; display:block; }

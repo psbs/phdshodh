@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="en">
-    <head><meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <title>Blog — PhD Shodh</title><link rel="stylesheet" href="assets/css/pro-style.css">
-    </head>
-    <body>
-  <header class="site-header">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — PhD Shodh</title>
+  <meta name="description" content="Resources for PhD students: thesis writing tips, data analysis guides, viva preparation and research paper guidance." />
+  <link rel="stylesheet" href="assets/css/pro-style.css">
+</head>
+<body>
+  <!-- header -->
+   <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="/"><img src="assets/images/logo.svg" alt="PhD Shodh logo"></a>
 
@@ -25,13 +29,23 @@
     </nav>
   </div>
 </header>
-<main class="wrap">
-    <h1>Blog</h1>
-    <p>Coming soon — sample posts: How to write a PhD synopsis, Viva preparation, Data analysis tips (SPSS/R).</p>
-</main>
 
-    <footer class="site-footer"><div class="wrap"><p>&copy; <span id="yr-blog"></span> PhD Shodh</p></div></footer>
+  <main class="wrap content">
+    <h1>Blog & Resources</h1>
+    <p class="muted">Practical guides and templates to help PhD students finish faster and publish better.</p>
+
+    <ul class="post-list">
+      <li><a href="/post-1.html">How to write a PhD synopsis (with template)</a><p class="muted">A step-by-step guide and ready-to-use synopsis template.</p></li>
+      <li><a href="/post-2.html">Top 10 thesis mistakes and how to fix them</a><p class="muted">Common pitfalls in thesis writing and practical fixes.</p></li>
+      <li><a href="/post-3.html">Viva preparation: checklist and mock questions</a><p class="muted">Prepare confidently for your viva voce with these strategies.</p></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="yr-blog"></span> PhD Shodh</p>
+    </div>
+  </footer>
 <script>document.getElementById('yr-blog').innerText = new Date().getFullYear();</script>
-
 </body>
 </html>
