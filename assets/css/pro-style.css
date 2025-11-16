@@ -329,3 +329,60 @@ header.site-header { overflow: visible; }
 
 /* final safety: ensure images are not taller than their container */
 img { max-width:100%; height:auto; display:block; }
+
+/* ===== Mobile button visibility & touch-friendly layout ===== */
+/* Apply only on small / phone screens */
+@media (max-width:719px) {
+
+  /* Make hero CTAs full-width and visible on mobile */
+  .actions a.btn-primary,
+  .actions a.btn-outline,
+  .btn-primary,
+  .btn-outline {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: center !important;
+    padding: 12px 14px !important;
+    margin: 10px 0 !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+  }
+
+  /* Force primary/outline colors with higher specificity */
+  .actions a.btn-primary,
+  .btn-primary {
+    background: var(--accent) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 6px 18px rgba(11,97,164,0.08);
+  }
+
+  .actions a.btn-outline,
+  .btn-outline {
+    background: transparent !important;
+    color: var(--accent) !important;
+    border: 2px solid var(--accent) !important;
+  }
+
+  /* Ensure CTAs appear above any sticky header or overlays */
+  .hero,
+  .hero .wrap,
+  .actions {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Make sure header / mobile menu do not overlap hero CTAs */
+  header.site-header { z-index: 200; }
+  .nav { z-index: 190; }
+
+  /* If the mobile nav is open, push content down so CTAs remain visible */
+  .nav.open + main,
+  .nav.open ~ main {
+    transform: translateY(8px);
+  }
+
+  /* Slightly increase touch target for nav CTA inside collapsed menu */
+  .nav a.cta { padding: 12px 14px; border-radius: 10px; text-align:center; display:block; width:100%; }
+}
