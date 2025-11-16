@@ -53,4 +53,90 @@ button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;b
   display: block;
 }
 
+/* -------------------------
+   Mobile-first / Responsive
+   ------------------------- */
+
+/* Basic header layout (mobile) */
+.header-inner{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.brand img{height:44px}
+
+/* Mobile menu button */
+.menu-toggle{
+  display:inline-flex;
+  flex-direction:column;
+  gap:5px;
+  width:44px;
+  height:44px;
+  padding:8px;
+  border-radius:8px;
+  background:transparent;
+  border:1px solid transparent;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+.menu-toggle .bar{display:block;width:20px;height:2.5px;background:#0b355e;border-radius:2px;transition:all .2s}
+
+/* nav - mobile hidden by default (collapsed) */
+.nav{
+  position:absolute;
+  top:66px; /* under header */
+  left:0;
+  right:0;
+  background:#fff;
+  box-shadow:0 8px 24px rgba(10,20,40,0.06);
+  margin:0;
+  padding:10px 16px;
+  display:none;
+  flex-direction:column;
+  gap:8px;
+  z-index:60;
+}
+.nav a{display:block;padding:10px;border-radius:8px;color:var(--accent);text-decoration:none;font-weight:600}
+.nav a.cta{background:var(--accent);color:#fff;text-align:center}
+
+/* When nav is open add class .open via JS */
+.nav.open{display:flex}
+
+/* Make hero image responsive */
+.hero-image{max-width:100%;width:100%;justify-self:center}
+.hero-image img{width:100%;height:auto;display:block}
+
+/* Profile / hero grid stacking on small screens */
+.hero-grid{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+
+/* Features stack */
+.features{grid-template-columns:1fr;gap:14px}
+
+/* Services grid stack */
+.services-grid{grid-template-columns:1fr;gap:12px}
+
+/* content card padding for mobile */
+.card{padding:16px}
+
+/* larger devices: tablet and up */
+@media (min-width:720px){
+  /* header layout for larger screens */
+  .header-inner{position:relative}
+  .menu-toggle{display:none}
+  .nav{display:flex;position:static;background:transparent;box-shadow:none;flex-direction:row;gap:14px;padding:0;align-items:center}
+  .nav a{padding:8px 10px}
+  .nav a.cta{padding:8px 12px;border-radius:6px}
+
+  /* hero grid two columns */
+  .hero-grid{grid-template-columns:1fr 420px;gap:24px}
+  .features{grid-template-columns:repeat(3,1fr)}
+}
+
+/* desktop wide */
+@media (min-width:1100px){
+  .hero-grid{grid-template-columns:1fr 480px}
+  .wrap{max-width:1100px}
+}
+
+.menu-toggle.open .bar:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-toggle.open .bar:nth-child(2){opacity:0;transform:scaleX(0)}
+.menu-toggle.open .bar:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
 

@@ -39,17 +39,27 @@
   </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/"><img src="assets/images/logo.svg" alt="PhD Shodh logo"></a>
-      <nav class="nav">
-        <a href="/about.html">About</a>
-        <a href="/services.html">Services</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html" class="cta">Contact</a>
-      </nav>
-    </div>
-  </header>
+ <header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><img src="assets/images/logo.svg" alt="PhD Shodh logo"></a>
+
+    <!-- Mobile menu button -->
+    <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav" id="main-nav">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/services.html">Services</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
 
   <main>
     <section class="hero">
@@ -112,6 +122,19 @@
     </div>
   </footer>
 
-<script>document.getElementById('yr').innerText = new Date().getFullYear();</script>
+<script>document.getElementById('yr-about').innerText = new Date().getFullYear();</script>
+<script>
+  (function(){
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('main-nav');
+    if(!btn || !nav) return;
+    btn.addEventListener('click', function(){
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.classList.toggle('open', open);
+    });
+  })();
+</script>
+
 </body>
 </html>
