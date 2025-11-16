@@ -1,0 +1,31 @@
+<svg width="600" height="420" viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="420" fill="#f7fbff"></rect>
+
+  <!-- Decorative soft circles -->
+  <circle cx="480" cy="100" r="90" fill="#d9eaff" opacity="0.55"></circle>
+  <circle cx="150" cy="80" r="60" fill="#c8def9" opacity="0.35"></circle>
+
+  <!-- Desk / base -->
+  <rect x="60" y="250" width="480" height="120" rx="18" fill="#e9f2ff"></rect>
+
+  <!-- Notebook / document -->
+  <rect x="220" y="130" width="160" height="200" rx="14" fill="#ffffff" stroke="#0b61a4" stroke-width="3"></rect>
+  <line x1="240" y1="170" x2="360" y2="170" stroke="#0b61a4" stroke-width="4" stroke-linecap="round"></line>
+  <line x1="240" y1="205" x2="360" y2="205" stroke="#0b61a4" stroke-width="4" stroke-linecap="round"></line>
+  <line x1="240" y1="240" x2="360" y2="240" stroke="#0b61a4" stroke-width="4" stroke-linecap="round"></line>
+  <line x1="240" y1="275" x2="320" y2="275" stroke="#0b61a4" stroke-width="4" stroke-linecap="round"></line>
+
+  <!-- Graduation cap -->
+  <g transform="translate(110,175)">
+    <polygon points="0,20 70,0 140,20 70,40" fill="#0b61a4"></polygon>
+    <rect x="55" y="40" width="30" height="28" rx="4" fill="#0b355e"></rect>
+    <line x1="70" y1="0" x2="70" y2="60" stroke="#0b61a4" stroke-width="4" stroke-linecap="round"></line>
+    <circle cx="70" cy="62" r="6" fill="#0b61a4"></circle>
+  </g>
+
+  <!-- Text inside the hero illustration -->
+  <text x="90" y="360" font-family="Segoe UI, Roboto, Arial" font-size="24" fill="#0b355e" opacity="0.85">
+    Expert PhD Thesis Guidance &amp; Editing
+  </text>
+
+</svg>

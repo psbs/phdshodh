@@ -1,0 +1,10 @@
+<svg width="360" height="80" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="80" fill="white"></rect>
+  <g transform="translate(20,18)">
+    <circle cx="22" cy="22" r="20" fill="#0b61a4"></circle>
+    <path d="M12 22h20M22 12v20" stroke="white" stroke-width="3" stroke-linecap="round"></path>
+  </g>
+  <text x="80" y="50" font-family="Segoe UI, Roboto, Arial" font-size="34" fill="#0b355e" font-weight="700">
+    PhD <tspan fill="#0b61a4">Shodh</tspan>
+  </text>
+</svg>
