@@ -25,10 +25,10 @@
 
     <nav class="nav" id="main-nav">
       <a href="/">Home</a>
-      <a href="/about.html">About</a>
+      <a href="/about.html" class="cta">About</a>
       <a href="/services.html">Services</a>
       <a href="/blog.html">Blog</a>
-      <a href="/contact.html" class="cta">Contact</a>
+      <a href="/contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -39,14 +39,14 @@
 
       <h1>About PhD Shodh</h1>
 
-      <p><strong>PhD Shodh</strong> is led by an experienced researcher, PhD scholar mentor, and academic consultant based in Bhopal. We specialize in **end-to-end PhD thesis guidance**, advanced **statistical analysis**, and **academic writing support** for scholars across India. Our approach is ethical, structured, university-aligned, and designed to help you complete your work with confidence.</p>
+      <p><strong>PhD Shodh</strong> is led by an experienced researcher, PhD scholar mentor, and academic consultant based in Bhopal. We specialize in <strong>end-to-end PhD thesis guidance</strong>, advanced <strong>statistical analysis</strong>, and <strong>academic writing support</strong> for scholars across India. Our approach is ethical, structured, university-aligned, and designed to help you complete your work with confidence.</p>
 
       <h2>About the Mentor</h2>
       <ul>
         <li><strong>PhD, NET & SET qualified</strong></li>
         <li>Strong command over <strong>SPSS, R, Python</strong> for statistical analysis</li>
         <li>Experience guiding <strong>multiple PhD and postgraduate students</strong></li>
-        <li>Deep understanding of <strong>Bhopal & MP universities’</strong> formats and submission requirements</li>
+        <li>Deep understanding of <strong>Bhopal & MP universities</strong> formats and submission requirements</li>
         <li>Specialization in academic writing, data interpretation, and research methodology</li>
       </ul>
 
@@ -91,13 +91,18 @@
     </article>
   </main>
 
-  <footer class="site-footer">
+ <footer class="site-footer">
     <div class="wrap">
-      <p>&copy; <span id="yr-about"></span> PhD Shodh — Bhopal</p>
+      <div class="left">
+        <p>&copy; <span id="yr-index"></span> PhD Shodh — Bhopal, Madhya Pradesh</p>
+      </div>
+      <div class="right">
+        <a href="/privacy.html">Privacy</a><span> · </span><a href="/contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 
-<script>document.getElementById('yr-about').innerText = new Date().getFullYear();</script>
+<script>document.getElementById('yr-index').innerText = new Date().getFullYear();</script>
 <script>
   (function(){
     const btn = document.querySelector('.menu-toggle');
