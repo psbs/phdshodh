@@ -1,61 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Privacy Policy — PhD Shodh</title>
-  <meta name="description" content="Privacy policy for PhD Shodh. How we handle your personal data." />
-  <link rel="stylesheet" href="assets/css/pro-style.css">
+  <meta name="description" content="Privacy policy for PhD Shodh. We handle user data, enquiries and communications with confidentiality and limited processing for contact and service delivery." />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/"><img src="assets/images/logo.svg" alt="PhD Shodh logo"></a>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="PhD Shodh home">
+        <img src="assets/images/logo.svg" alt="PhD Shodh logo" />
+      </a>
+      <nav class="nav" role="navigation" aria-label="Primary">
+            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
 
-    <!-- Mobile menu button -->
-    <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+            <ul id="nav-list" class="nav-list" role="menubar" aria-hidden="true">
+                <!-- Close control for mobile overlay -->
+                <li class="nav-close-wrap">
+                <button id="nav-close" class="nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                </li>
 
-    <nav class="nav" id="main-nav">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services.html">Services</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html" class="cta">Contact</a>
-    </nav>
-  </div>
-</header>
+                <li role="none"><a role="menuitem" class="nav-link" href="/"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/about.html"><i class="fa-solid fa-user-graduate"></i> <span>About</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/services.html"><i class="fa-solid fa-briefcase"></i> <span>Services</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/blog.html"><i class="fa-solid fa-blog"></i> <span>Blog</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/contact.html"><i class="fa-solid fa-envelope-open-text"></i> <span>Contact</span></a></li>
+            </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="site-main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</h1>
+        <p class="section-intro">We respect your privacy. This page explains what we collect and why.</p>
 
-  <main class="wrap content">
-    <h1>Privacy Policy</h1>
-    <p>We collect contact information when you send us messages or sign up for services. We use this information only to respond to your enquiries and to deliver contracted services. We do not sell or share your personal data with third parties except to the extent required to provide the service (e.g., payment processors).</p>
-    <h2>Cookies & Analytics</h2>
-    <p>We may use Google Analytics to understand site usage; no personally identifying information is stored by us through analytics tools.</p>
-    <h2>Contact</h2>
-    <p>Questions about privacy: <a href="mailto:samay25@gmail.com.com">samay25@gmail.com</a></p>
+        <h3>Information we collect</h3>
+        <ul>
+          <li>Contact details you provide (name, email, phone)</li>
+          <li>Project details submitted via contact forms</li>
+          <li>Optional analytics data (if you add Google Analytics later)</li>
+        </ul>
+
+        <h3>How we use it</h3>
+        <p class="muted">We use data to respond to enquiries, provide quotes, deliver services and communicate project updates. We do not sell your data.</p>
+
+        <h3>Retention</h3>
+        <p class="muted">Contact information is kept until the enquiry is closed or longer if required for project records. You can request deletion by emailing samay25@gmail.com.</p>
+
+        <h3>Third parties</h3>
+        <p class="muted">We may use Formspree (contact handling) or email providers to process messages. We will outline specifics if you engage services requiring third-party processors.</p>
+
+        <h3>Contact</h3>
+        <p class="muted">Email: <a href="mailto:samay25@gmail.com">samay25@gmail.com</a></p>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap"><p>&copy; <span id="yr-privacy"></span> PhD Shodh</p></div>
-  </footer>
+  <!-- Footer: paste footer block here -->
 
-<script>document.getElementById('yr-privacy').innerText = new Date().getFullYear();</script>
-<script>
-  (function(){
-    const btn = document.querySelector('.menu-toggle');
-    const nav = document.getElementById('main-nav');
-    if(!btn || !nav) return;
-    btn.addEventListener('click', function(){
-      const open = nav.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.classList.toggle('open', open);
-    });
-  })();
-</script>
-
+  <script> (function(){ var y2=document.getElementById('year-footer'); if(y2)y2.textContent=new Date().getFullYear(); })(); </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

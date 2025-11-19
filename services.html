@@ -3,101 +3,326 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services — PhD Shodh</title>
-  <meta name="description" content="Services: thesis editing, research design, data analysis (SPSS/R/Python), formatting, and viva coaching." />
-  <link rel="stylesheet" href="assets/css/pro-style.css">
+  <title>Services — PhD Shodh | Thesis Guidance, Data Analysis & Viva Coaching</title>
+  <meta name="description" content="Services offered by PhD Shodh: thesis writing, methodology design, SPSS/R analysis, viva coaching, publication support and IGNOU project assistance." />
+  <link rel="canonical" href="https://phdshodh.com/services.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PhD Shodh Services — Thesis Guidance & Data Analysis" />
+  <meta property="og:description" content="Comprehensive PhD support: synopsis, research design, analysis, thesis writing, editing and viva coaching." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://phdshodh.com/services.html" />
+  <meta property="og:image" content="assets/images/og-home.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"PhD Shodh Services",
+    "provider":{"@type":"Organization","name":"PhD Shodh","url":"https://phdshodh.com/"},
+    "areaServed":"IN"
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-  <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/"><img src="assets/images/logo.svg" alt="PhD Shodh logo"></a>
+  <!-- Header -->
+<!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="PhD Shodh home">
+        <img src="assets/images/logo.svg" alt="PhD Shodh logo" />
+      </a>
+      <nav class="nav" role="navigation" aria-label="Primary">
+            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
 
-    <!-- Mobile menu button -->
-    <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+            <ul id="nav-list" class="nav-list" role="menubar" aria-hidden="true">
+                <!-- Close control for mobile overlay -->
+                <li class="nav-close-wrap">
+                <button id="nav-close" class="nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                </li>
 
-    <nav class="nav" id="main-nav">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services.html" class="cta">Services</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/contact.html" >Contact</a>
-    </nav>
-  </div>
-</header>
+                <li role="none"><a role="menuitem" class="nav-link" href="/"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/about.html"><i class="fa-solid fa-user-graduate"></i> <span>About</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link nav-cta" href="/services.html"><i class="fa-solid fa-briefcase"></i> <span>Services</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/blog.html"><i class="fa-solid fa-blog"></i> <span>Blog</span></a></li>
+                <li role="none"><a role="menuitem" class="nav-link" href="/contact.html"><i class="fa-solid fa-envelope-open-text"></i> <span>Contact</span></a></li>
+            </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="site-main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title"><i class="fa-solid fa-briefcase"></i> Our services — practical, milestone-driven</h1>
+        <p class="lead">We offer a wide range of research support services. Choose one or combine multiple services for a tailored package.</p>
 
-  <main class="wrap content">
-    <h1>Services & Packages</h1>
+        <!-- service cards -->
+        <div style="margin-top:14px; display:grid; gap:12px;">
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-file-lines"></i></div>
+            <div>
+              <h3 style="margin:0">Thesis & Dissertation Writing (Chapter-wise)</h3>
+              <p class="muted">Complete drafting of individual chapters with supervisor-based revisions, citation management and final submission checks.</p>
+            </div>
+          </div>
 
-    <section class="services-grid">
-      <div class="service card">
-        <h2>Thesis Editing & Proofreading</h2>
-        <p>Language polishing, structure improvement, clarity, referencing checks. We ensure academic tone and flow.</p>
-        <p class="price">Starting from: <strong>₹4,000*</strong></p>
-      </div>
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-lightbulb"></i></div>
+            <div>
+              <h3 style="margin:0">Synopsis & Proposal</h3>
+              <p class="muted">Topic selection, gap analysis, objectives, research questions and submission-ready synopsis aligned to university format.</p>
+            </div>
+          </div>
 
-      <div class="service card">
-        <h2>Research Design & Methodology</h2>
-        <p>Support on research questions, sampling, instrument design, and methodology write-up.</p>
-        <p class="price">Consultation: <strong>₹2,000+</strong></p>
-      </div>
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-vial"></i></div>
+            <div>
+              <h3 style="margin:0">Research Design & Methodology</h3>
+              <p class="muted">Choice of method (qual/quant/mixed), sampling, instrument creation, validity & reliability tests, and ethics guidance.</p>
+            </div>
+          </div>
 
-      <div class="service card">
-        <h2>Data Analysis & Interpretation</h2>
-        <p>SPSS / R / Python analysis, visualization and interpretation; results writing and tables.</p>
-        <p class="price">Per analysis package: <strong>₹5,000+</strong></p>
-      </div>
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-chart-simple"></i></div>
+            <div>
+              <h3 style="margin:0">Data Analysis & Visualization</h3>
+              <p class="muted">SPSS, R, Python analysis — descriptive, inferential tests (t-tests, ANOVA, regression), factor analysis, SEM support, visualizations and interpretation.</p>
+            </div>
+          </div>
 
-      <div class="service card">
-        <h2>Formatting & Submission</h2>
-        <p>University-compliant formatting, reference styling, final checks, and submission assistance.</p>
-        <p class="price">Flat fee: <strong>₹2,500+</strong></p>
-      </div>
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-file-pen"></i></div>
+            <div>
+              <h3 style="margin:0">Editing, Proofreading & Formatting</h3>
+              <p class="muted">Language editing, citation checks, LaTeX and Word formatting, plagiarism mitigation support and final pre-submission checks.</p>
+            </div>
+          </div>
 
-      <div class="service card">
-        <h2>Viva Preparation</h2>
-        <p>Mock vivas, anticipated Q&A, presentation review and confidence coaching (online).</p>
-        <p class="price">Per mock viva: <strong>₹2,000</strong></p>
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-person-chalkboard"></i></div>
+            <div>
+              <h3 style="margin:0">Viva Preparation & Presentation</h3>
+              <p class="muted">Mock vivas, Q&A practice sessions, presentation design and delivery coaching to present confidently.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div>
+              <h3 style="margin:0">Research Paper Writing & Journal Submission</h3>
+              <p class="muted">Manuscript drafting, target journal selection, formatting and submission support including response to reviewers.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display:flex;gap:12px;align-items:flex-start;">
+            <div style="width:56px;height:56px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(11,61,145,0.06), rgba(255,102,0,0.02));color:var(--md-primary)"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3 style="margin:0">IGNOU / Distance learning projects</h3>
+              <p class="muted">Structure, formatting, analysis and chapter support tailored to IGNOU and similar program requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="margin-top:16px;" class="center">
+          <a class="btn btn-primary" href="/contact.html"><i class="fa-solid fa-calendar-check"></i>&nbsp;Request a free consult</a>
+        </div>
       </div>
     </section>
 
-    <p class="muted">*Prices are indicative. Final quotes depend on complexity and timelines. For a tailored quote, <a href="/contact.html">contact us</a>.</p>
+    <!-- Pricing / packages (short) -->
+    <section class="section" aria-labelledby="packages-title">
+      <div class="container">
+        <h2 id="packages-title" class="section-title"><i class="fa-solid fa-wallet"></i> Typical packages</h2>
+        <p class="section-intro">Representative pricing & packages — final quote depends on scope, university rules and timelines. Contact us for a custom plan.</p>
 
-    <section class="cta card">
-      <h3>Ready to get started?</h3>
-      <p>Book a free 15-minute consultation to discuss your needs.</p>
-      <p><a class="btn-primary" href="/contact.html">Book a free consult</a></p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px;">
+          <div class="card">
+            <h3 style="margin:0">Synopsis package</h3>
+            <p class="muted">Topic finalisation, synopsis draft and two review rounds.</p>
+            <div style="margin-top:10px;"><strong>From:</strong> <span style="color:var(--md-primary)">₹3,500</span> (indicative)</div>
+          </div>
+          <div class="card">
+            <h3 style="margin:0">Chapter drafting (per chapter)</h3>
+            <p class="muted">Research-driven chapter drafting with references and formatting.</p>
+            <div style="margin-top:10px;"><strong>From:</strong> <span style="color:var(--md-primary)">₹8,000</span> (indicative)</div>
+          </div>
+          <div class="card">
+            <h3 style="margin:0">Data analysis</h3>
+            <p class="muted">Analysis, visualizations, interpretation and ready-to-paste results section.</p>
+            <div style="margin-top:10px;"><strong>From:</strong> <span style="color:var(--md-primary)">₹6,000</span> (indicative)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="services-faq">
+      <div class="container">
+        <h2 id="services-faq" class="section-title"><i class="fa-solid fa-circle-question"></i> Frequently asked questions</h2>
+
+        <div class="faq" style="margin-top:12px;">
+          <details>
+            <summary><strong>Can you follow my university's specific format?</strong></summary>
+            <p class="small muted">Yes — we adapt to university templates and submission guidelines. Please upload your template during initial consultation.</p>
+          </details>
+
+          <details>
+            <summary><strong>Is the work confidential?</strong></summary>
+            <p class="small muted">Absolutely. We sign NDAs on request and follow professional confidentiality standards.</p>
+          </details>
+
+          <details>
+            <summary><strong>How do payments & revisions work?</strong></summary>
+            <p class="small muted">Payments are milestone-based. Each package includes defined revision rounds. Exact terms are part of the project agreement.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / contact panel -->
+    <section class="section" aria-labelledby="services-contact">
+      <div class="container center" style="flex-direction:column;gap:10px;">
+        <h2 id="services-contact" class="section-title"><i class="fa-solid fa-phone"></i> Discuss your project</h2>
+        <p class="small muted">Share your stage and deadline — we’ll return a realistic plan and cost estimate.</p>
+        <a class="btn btn-accent" href="/contact.html"><i class="fa-solid fa-envelope"></i>&nbsp;Contact us</a>
+      </div>
     </section>
   </main>
 
- <footer class="site-footer">
-    <div class="wrap">
-      <div class="left">
-        <p>&copy; <span id="yr-index"></span> PhD Shodh — Bhopal, Madhya Pradesh</p>
+  <!-- Footer -->
+  <footer class="site-footer site-footer-dark" role="contentinfo" aria-labelledby="footer-heading">
+    <div class="container footer-grid-dark">
+      <div class="col about">
+        <h3 id="footer-heading" class="footer-title">PhD Shodh</h3>
+        <p class="small muted">Expert PhD guidance across India — from proposal to viva. Confidential, milestone-driven and research-ethical mentorship.</p>
+
+        <ul class="contact-list" aria-label="contact details">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:samay25@gmail.com">samay25@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Bhopal, Madhya Pradesh, India</li>
+        </ul>
+
+        <div class="social">
+          <a href="#" aria-label="Follow on Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Follow on Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Follow on LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Follow on Twitter/X" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
       </div>
-      <div class="right">
-        <a href="/privacy.html">Privacy</a><span> · </span><a href="/contact.html">Contact</a>
+
+      <div class="col quick-links" aria-labelledby="quick-links-title">
+        <h4 id="quick-links-title" class="footer-title small">Quick links</h4>
+        <ul>
+          <li><a href="/about.html"><i class="fa-solid fa-angle-right"></i> About</a></li>
+          <li><a href="/services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+          <li><a href="/blog.html"><i class="fa-solid fa-angle-right"></i> Blog & Guides</a></li>
+          <li><a href="/contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+          <li><a href="/privacy.html"><i class="fa-solid fa-angle-right"></i> Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="col phd-stages" aria-labelledby="stages-title-footer">
+        <h4 id="stages-title-footer" class="footer-title small">PhD Thesis — key stages</h4>
+
+        <div class="stage">
+          <img src="assets/images/stage-abstract.svg" alt="Abstract icon" class="stage-img" loading="lazy">
+          <div class="stage-body">
+            <h5>Abstract</h5>
+            <p class="small muted">Concise summary of objectives, research questions and key findings, crafted from your chapters or proposal.</p>
+          </div>
+        </div>
+
+        <div class="stage">
+          <img src="assets/images/stage-intro.svg" alt="Introduction icon" class="stage-img" loading="lazy">
+          <div class="stage-body">
+            <h5>Introduction</h5>
+            <p class="small muted">Problem statement, knowledge gap and hypothesis aligned to your university format.</p>
+          </div>
+        </div>
+
+        <div class="stage">
+          <img src="assets/images/stage-lit.svg" alt="Literature review icon" class="stage-img" loading="lazy">
+          <div class="stage-body">
+            <h5>Literature review</h5>
+            <p class="small muted">Curated references and structured review with correct citation style and relevance checks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col analysis-cta" aria-labelledby="analysis-title">
+        <h4 id="analysis-title" class="footer-title small">Research Methods & Analysis</h4>
+
+        <div class="mini-card">
+          <div class="mini-card-left">
+            <svg width="120" height="80" viewBox="0 0 120 80" class="mini-graph" aria-hidden="true">
+              <rect x="0" y="0" width="120" height="80" rx="6" fill="#06153a"/>
+              <g transform="translate(8,12)" fill="none" stroke="#FF6D00" stroke-width="2">
+                <polyline points="0,50 12,36 24,44 36,28 48,34 60,18 72,28 84,10 96,22" stroke-linejoin="round" stroke-linecap="round"></polyline>
+              </g>
+            </svg>
+          </div>
+
+          <div class="mini-card-right">
+            <p class="small muted">We provide method selection (qual/quant), instrument design and expert SPSS/R analysis with visuals and interpretation.</p>
+            <p style="margin-top:8px"><a class="btn btn-ghost" href="/services.html#analysis"><i class="fa-solid fa-chart-pie"></i>&nbsp;See analysis services</a></p>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h5 style="margin:0 0 6px 0">Get sample chapter</h5>
+          <p class="small muted">Download a sample methodology chapter to see our analysis template and figure styles.</p>
+          <a class="btn btn-accent" href="/contact.html" style="margin-top:8px"><i class="fa-solid fa-download"></i>&nbsp;Request sample</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="bottom-left">
+        <small class="small muted">© <span id="year-footer"></span> PhD Shodh. All Rights Reserved. <span class="sep">|</span> <a href="/terms.html">Terms</a></small>
+      </div>
+      <div class="bottom-right">
+        <small class="small muted">Designed for students • <a href="/sitemap.xml">Sitemap</a></small>
       </div>
     </div>
   </footer>
 
-<script>document.getElementById('yr-index').innerText = new Date().getFullYear();</script>
-<script>
-  (function(){
-    const btn = document.querySelector('.menu-toggle');
-    const nav = document.getElementById('main-nav');
-    if(!btn || !nav) return;
-    btn.addEventListener('click', function(){
-      const open = nav.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.classList.toggle('open', open);
-    });
-  })();
-</script>
+   <!-- Floating WhatsApp FAB (place just inside <body>) -->
+<a class="whatsapp-fab" 
+   href="https://wa.me/919406906110?text=Hi%20PhD%20Shodh%2C%20I%20found%20your%20website%20and%20need%20guidance"
+   target="_blank" rel="noopener noreferrer" aria-label="Chat with PhD Shodh on WhatsApp">
+  <span class="fab-icon" aria-hidden="true">
+    <i class="fa-brands fa-whatsapp"></i>
+  </span>
+  <span class="fab-text">Chat</span>
+</a>
 
+  <script>
+    (function(){
+      var y1 = document.getElementById('year');
+      var y2 = document.getElementById('year-footer');
+      var yearVal = new Date().getFullYear();
+      if (y1) y1.textContent = yearVal;
+      if (y2) y2.textContent = yearVal;
+
+      const btn = document.getElementById('nav-toggle');
+      const navList = document.getElementById('nav-list');
+      if (!btn || !navList) return;
+      btn.addEventListener('click', function(){
+        const open = navList.classList.toggle('show');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
