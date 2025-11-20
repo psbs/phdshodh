@@ -225,10 +225,11 @@ body{
   .nav-list.mobile-open .nav-link:hover,
   .nav-list.mobile-open .nav-link:focus {
     background: rgba(255,255,255,0.1);
+    color:#ffffff;
   }
 
   .nav-list.mobile-open .nav-link i {
-    color: rgba(255,255,255,0.95);
+    /* color: rgba(255,255,255,0.95); */
     width: 24px;
     text-align: center;
   }
@@ -239,7 +240,7 @@ body{
     color: var(--md-primary);
     margin-top: 8px;
     border-radius: 999px;
-    justify-content: center;
+    /* justify-content: center; */
   }
 }
 
@@ -421,10 +422,10 @@ body{
    If you prefer the images to appear above text on narrow screens, you can reorder:
 */
 @media (max-width:740px) {
-  .card {
+  /* .card {
     align-items: center;
     text-align: center;
-  }
+  } */
   .card-icon { margin: 0 auto 10px; }
 }
 
@@ -676,3 +677,5 @@ body.menu-open {
 @media (max-width:420px) {
   .whatsapp-fab .fab-text { display: none; } /* show just icon on small screens */
 }
+
+article.card a{text-decoration: none;}
