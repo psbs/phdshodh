@@ -1,18 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SPSS vs R for Thesis Analysis — Which is Right for Your PhD?</title>
-  <meta name="description" content="Compare SPSS and R for thesis data analysis: strengths, weaknesses, reproducibility, learning curve and clear recommendations for Indian PhD students." />
-  <link rel="canonical" href="https://phdshodh.com/spss-vs-r.html" />
+  <meta name="description"
+    content="Compare SPSS and R for thesis data analysis: strengths, weaknesses, reproducibility, learning curve and clear recommendations for Indian PhD students." />
+  <link rel="canonical" href="https://phdshodh.com/post-1.html" />
   <meta property="og:title" content="SPSS vs R for Thesis Analysis — Which is Right for Your PhD?" />
-  <meta property="og:description" content="Clear comparison of SPSS and R focusing on reproducibility, methods, learning curve and recommended workflows for thesis analysis." />
+  <meta property="og:description"
+    content="Clear comparison of SPSS and R focusing on reproducibility, methods, learning curve and recommended workflows for thesis analysis." />
   <meta property="og:image" content="assets/images/spss-vs-r-1200w.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/blog.css">
   <style>
-    table td,table th{border-bottom:1px solid #000;padding: 7px 10px;}
+    table td,
+    table th {
+      border-bottom: 1px solid #000;
+      padding: 7px 10px;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script type="application/ld+json">
@@ -30,6 +38,7 @@
   </script>
   <link rel="icon" href="assets/images/favicon.ico">
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header" role="banner">
@@ -39,156 +48,232 @@
         <span class="brand-text">PhD Shodh</span>
       </a>
       <nav class="nav" role="navigation" aria-label="Primary">
-            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </button>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list"
+          aria-label="Open menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
 
-            <ul id="nav-list" class="nav-list" role="menubar" aria-hidden="true">
-                <!-- Close control for mobile overlay -->
-                <li class="nav-close-wrap">
-                <button id="nav-close" class="nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
-                </li>
+        <ul id="nav-list" class="nav-list" role="menubar" aria-hidden="true">
+          <!-- Close control for mobile overlay -->
+          <li class="nav-close-wrap">
+            <button id="nav-close" class="nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark"
+                aria-hidden="true"></i></button>
+          </li>
 
-                <li role="none"><a role="menuitem" class="nav-link" href="/"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
-                <li role="none"><a role="menuitem" class="nav-link" href="/about.html"><i class="fa-solid fa-user-graduate"></i> <span>About</span></a></li>
-                <li role="none"><a role="menuitem" class="nav-link" href="/services.html"><i class="fa-solid fa-briefcase"></i> <span>Services</span></a></li>
-                <li role="none"><a role="menuitem" class="nav-link nav-cta" href="/blog.html"><i class="fa-solid fa-blog"></i> <span>Blog</span></a></li>
-                <li role="none"><a role="menuitem" class="nav-link" href="/contact.html"><i class="fa-solid fa-envelope-open-text"></i> <span>Contact</span></a></li>
-            </ul>
+          <li role="none"><a role="menuitem" class="nav-link" href="/"><i class="fa-solid fa-house"></i>
+              <span>Home</span></a></li>
+          <li role="none"><a role="menuitem" class="nav-link" href="/about.html"><i
+                class="fa-solid fa-user-graduate"></i> <span>About</span></a></li>
+          <li role="none"><a role="menuitem" class="nav-link" href="/services.html"><i
+                class="fa-solid fa-briefcase"></i> <span>Services</span></a></li>
+          <li role="none"><a role="menuitem" class="nav-link nav-cta" href="/blog.html"><i class="fa-solid fa-blog"></i>
+              <span>Blog</span></a></li>
+          <li role="none"><a role="menuitem" class="nav-link" href="/contact.html"><i
+                class="fa-solid fa-envelope-open-text"></i> <span>Contact</span></a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main class="site-main">
     <div class="blog-container">
-    <section class="section">
-      <div class="container">
-        <nav style="margin-bottom:12px"><a href="/blog.html">&larr; Back to blog</a></nav>
-        <h1 class="section-title">SPSS vs R for thesis analysis — pick the right tool</h1>
-        <p class="small muted">Oct 2025 • 8–10 min read</p>
+      <section class="section">
+        <div class="container">
+          <nav style="margin-bottom:12px"><a href="/blog.html">&larr; Back to blog</a></nav>
+          <h1 class="section-title">SPSS vs R for thesis analysis — pick the right tool</h1>
+          <p class="small muted">Oct 2025 • 8–10 min read</p>
 
-        <article style="margin-top:14px;line-height:1.7;">
-          <div class="article-banner">
-            <picture class="banner-picture">
-              <img src="assets/images/spss_vs_r.png" alt="SPSS and R comparison for thesis analysis" loading="lazy">
-            </picture>
-          </div>
+          <article style="margin-top:14px;line-height:1.7;">
+            <div class="article-banner">
+              <picture class="banner-picture">
+                <img src="assets/images/spss_vs_r.png" alt="SPSS and R comparison for thesis analysis" loading="lazy">
+              </picture>
+            </div>
 
-          <p class="lead">SPSS and R are both common choices for thesis data analysis. Which should you learn and use? This guide compares them on learning curve, reproducibility, advanced methods, collaboration, and practical workflows — so you can pick the right tool for your PhD and avoid pitfalls.</p>
+            <p class="lead">SPSS and R are both common choices for thesis data analysis. Which should you learn and use?
+              This guide compares them on learning curve, reproducibility, advanced methods, collaboration, and
+              practical workflows — so you can pick the right tool for your PhD and avoid pitfalls.</p>
 
-          <h2>Quick recommendation (if you're short on time)</h2>
-          <p><strong>Use R</strong> if you need reproducible scripts, advanced modelling (SEM, mixed models), custom visualisations and long-term research portability. <strong>Use SPSS</strong> if you (or your supervisor) require rapid GUI-based analyses, simple tests and immediate, formatted tables for thesis drafts — but pair SPSS with good version control for transparency.</p>
+            <h2>Quick recommendation (if you're short on time)</h2>
+            <p><strong>Use R</strong> if you need reproducible scripts, advanced modelling (SEM, mixed models), custom
+              visualisations and long-term research portability. <strong>Use SPSS</strong> if you (or your supervisor)
+              require rapid GUI-based analyses, simple tests and immediate, formatted tables for thesis drafts — but
+              pair SPSS with good version control for transparency.</p>
 
-          <h2>Comparison table — high level</h2>
-          <table style="width:100%;border-collapse:collapse;margin-top:8px;">
-            <thead>
-              <tr><th style="text-align:left">Aspect</th><th style="text-align:left">SPSS</th><th style="text-align:left">R</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Learning curve</td><td>Gentle (GUI; menu-driven)</td><td>Steeper (scripting required) but scalable</td></tr>
-              <tr><td>Reproducibility</td><td>Poor by default (point-and-click), improved via syntax files</td><td>Excellent (scripted, literate workflows with R Markdown)</td></tr>
-              <tr><td>Advanced methods</td><td>Many procedures but limited cutting-edge packages</td><td>State-of-the-art packages (lme4, lavaan, brms, mgcv)</td></tr>
-              <tr><td>Visualisations</td><td>Basic charting (limited customization)</td><td>Highly flexible (ggplot2, patchwork)</td></tr>
-              <tr><td>Cost & licensing</td><td>Commercial (license costs)</td><td>Free & open-source</td></tr>
-              <tr><td>Community & support</td><td>Good documentation; less community extensions</td><td>Large community; many tutorials & reproducible examples</td></tr>
-            </tbody>
-          </table>
+            <h2>Comparison table — high level</h2>
+            <table style="width:100%;border-collapse:collapse;margin-top:8px;">
+              <thead>
+                <tr>
+                  <th style="text-align:left">Aspect</th>
+                  <th style="text-align:left">SPSS</th>
+                  <th style="text-align:left">R</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learning curve</td>
+                  <td>Gentle (GUI; menu-driven)</td>
+                  <td>Steeper (scripting required) but scalable</td>
+                </tr>
+                <tr>
+                  <td>Reproducibility</td>
+                  <td>Poor by default (point-and-click), improved via syntax files</td>
+                  <td>Excellent (scripted, literate workflows with R Markdown)</td>
+                </tr>
+                <tr>
+                  <td>Advanced methods</td>
+                  <td>Many procedures but limited cutting-edge packages</td>
+                  <td>State-of-the-art packages (lme4, lavaan, brms, mgcv)</td>
+                </tr>
+                <tr>
+                  <td>Visualisations</td>
+                  <td>Basic charting (limited customization)</td>
+                  <td>Highly flexible (ggplot2, patchwork)</td>
+                </tr>
+                <tr>
+                  <td>Cost & licensing</td>
+                  <td>Commercial (license costs)</td>
+                  <td>Free & open-source</td>
+                </tr>
+                <tr>
+                  <td>Community & support</td>
+                  <td>Good documentation; less community extensions</td>
+                  <td>Large community; many tutorials & reproducible examples</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <h2>When SPSS is the practical choice</h2>
-          <ul>
-            <li><strong>Supervisor preference:</strong> If committee expects SPSS tables or output formats, SPSS reduces friction during review.</li>
-            <li><strong>Quick descriptive analysis:</strong> For basic frequencies, crosstabs, means and simple ANOVA, SPSS GUI gives quick results.</li>
-            <li><strong>No programming time:</strong> Students with tight deadlines who cannot invest time in coding may use SPSS for core analyses — but should save syntax files for reproducibility.</li>
-            <li><strong>Institutional availability:</strong> Many Indian universities provide SPSS licenses on campus PCs or labs which helps standardise support.</li>
-          </ul>
+            <h2>When SPSS is the practical choice</h2>
+            <ul>
+              <li><strong>Supervisor preference:</strong> If committee expects SPSS tables or output formats, SPSS
+                reduces friction during review.</li>
+              <li><strong>Quick descriptive analysis:</strong> For basic frequencies, crosstabs, means and simple ANOVA,
+                SPSS GUI gives quick results.</li>
+              <li><strong>No programming time:</strong> Students with tight deadlines who cannot invest time in coding
+                may use SPSS for core analyses — but should save syntax files for reproducibility.</li>
+              <li><strong>Institutional availability:</strong> Many Indian universities provide SPSS licenses on campus
+                PCs or labs which helps standardise support.</li>
+            </ul>
 
-          <h2>When R is the better long-term choice</h2>
-          <ul>
-            <li><strong>Reproducibility & transparency:</strong> R scripts (and R Markdown notebooks) capture data cleaning, transformations, analysis and plots in a single, version-controlled file — ideal for thesis appendices and revision requests.</li>
-            <li><strong>Advanced & modern methods:</strong> Best-in-class packages for SEM (lavaan), multilevel models (lme4), Bayesian modelling (brms), survival analysis, machine learning (caret, mlr3, tidymodels).</li>
-            <li><strong>Custom visualisations:</strong> Publication-quality plots with complete customization using ggplot2 and supporting packages.</li>
-            <li><strong>Cost-effectiveness:</strong> Free, which matters for students and small labs.</li>
-          </ul>
+            <h2>When R is the better long-term choice</h2>
+            <ul>
+              <li><strong>Reproducibility & transparency:</strong> R scripts (and R Markdown notebooks) capture data
+                cleaning, transformations, analysis and plots in a single, version-controlled file — ideal for thesis
+                appendices and revision requests.</li>
+              <li><strong>Advanced & modern methods:</strong> Best-in-class packages for SEM (lavaan), multilevel models
+                (lme4), Bayesian modelling (brms), survival analysis, machine learning (caret, mlr3, tidymodels).</li>
+              <li><strong>Custom visualisations:</strong> Publication-quality plots with complete customization using
+                ggplot2 and supporting packages.</li>
+              <li><strong>Cost-effectiveness:</strong> Free, which matters for students and small labs.</li>
+            </ul>
 
-          <h2>Reproducible workflow recommendations</h2>
-          <p>Regardless of your tool, follow reproducible research practices:</p>
-          <ol>
-            <li><strong>Version control:</strong> Keep analysis scripts (SPSS syntax or R scripts) in Git. Even if you use SPSS GUI, save and commit `.sps` syntax files and dataset versions.</li>
-            <li><strong>Data documentation:</strong> Maintain a data dictionary (CSV/Excel) describing variables, units, coding and missing-value rules.</li>
-            <li><strong>Literate reports:</strong> Use R Markdown or Jupyter/Quarto to combine code, results and narrative. For SPSS users, consider exporting outputs to R Markdown or a Word document with inline screenshots and attach syntax files.</li>
-            <li><strong>Raw & processed data:</strong> Store raw data untouched; perform transformations in scripts and save processed versions with clear names.</li>
-          </ol>
+            <h2>Reproducible workflow recommendations</h2>
+            <p>Regardless of your tool, follow reproducible research practices:</p>
+            <ol>
+              <li><strong>Version control:</strong> Keep analysis scripts (SPSS syntax or R scripts) in Git. Even if you
+                use SPSS GUI, save and commit `.sps` syntax files and dataset versions.</li>
+              <li><strong>Data documentation:</strong> Maintain a data dictionary (CSV/Excel) describing variables,
+                units, coding and missing-value rules.</li>
+              <li><strong>Literate reports:</strong> Use R Markdown or Jupyter/Quarto to combine code, results and
+                narrative. For SPSS users, consider exporting outputs to R Markdown or a Word document with inline
+                screenshots and attach syntax files.</li>
+              <li><strong>Raw & processed data:</strong> Store raw data untouched; perform transformations in scripts
+                and save processed versions with clear names.</li>
+            </ol>
 
-          <h2>Example thesis workflows (practical)</h2>
-          <h3>Workflow A — SPSS-first, R for reproducibility (good compromise)</h3>
-          <ol>
-            <li>Use SPSS GUI for initial exploration and to satisfy supervisor preferences.</li>
-            <li>Save all SPSS syntax (*.sps) for every session (Analyze → Paste) and commit to Git.</li>
-            <li>Reproduce final tables and figures in R (read SPSS `.sav` via `haven`), create high-quality plots and R Markdown report for appendices.</li>
-          </ol>
+            <h2>Example thesis workflows (practical)</h2>
+            <h3>Workflow A — SPSS-first, R for reproducibility (good compromise)</h3>
+            <ol>
+              <li>Use SPSS GUI for initial exploration and to satisfy supervisor preferences.</li>
+              <li>Save all SPSS syntax (*.sps) for every session (Analyze → Paste) and commit to Git.</li>
+              <li>Reproduce final tables and figures in R (read SPSS `.sav` via `haven`), create high-quality plots and
+                R Markdown report for appendices.</li>
+            </ol>
 
-          <h3>Workflow B — R-first (recommended for advanced / reproducible theses)</h3>
-          <ol>
-            <li>Import raw data (CSV/SAV) into R using `readr`/`haven`.</li>
-            <li>Perform data cleaning in scripts with tidyverse functions and document steps in R Markdown.</li>
-            <li>Run analyses (lm, glm, lmer, lavaan, etc.), create figures with `ggplot2` and produce final report using R Markdown (PDF/Word/HTML).</li>
-          </ol>
+            <h3>Workflow B — R-first (recommended for advanced / reproducible theses)</h3>
+            <ol>
+              <li>Import raw data (CSV/SAV) into R using `readr`/`haven`.</li>
+              <li>Perform data cleaning in scripts with tidyverse functions and document steps in R Markdown.</li>
+              <li>Run analyses (lm, glm, lmer, lavaan, etc.), create figures with `ggplot2` and produce final report
+                using R Markdown (PDF/Word/HTML).</li>
+            </ol>
 
-          <h2>Common analyses: how they map to SPSS vs R</h2>
-          <ul>
-            <li><strong>Descriptives & cross-tabs:</strong> Both — SPSS easier for one-off tables; R better for batch processing.</li>
-            <li><strong>Factor analysis / CFA:</strong> SPSS has EFA modules; for CFA, R + `lavaan` is stronger and more flexible.</li>
-            <li><strong>SEM / complex models:</strong> Prefer R (`lavaan`, `sem`, Bayesian alternatives).</li>
-            <li><strong>Mixed-effects models:</strong> R (lme4, nlme) is the standard; SPSS Mixed procedure exists but R provides richer diagnostics.</li>
-            <li><strong>Machine learning / predictive models:</strong> R (tidymodels, caret, mlr3) or Python; SPSS has Modeler but it's less flexible and often commercial.</li>
-          </ul>
+            <h2>Common analyses: how they map to SPSS vs R</h2>
+            <ul>
+              <li><strong>Descriptives & cross-tabs:</strong> Both — SPSS easier for one-off tables; R better for batch
+                processing.</li>
+              <li><strong>Factor analysis / CFA:</strong> SPSS has EFA modules; for CFA, R + `lavaan` is stronger and
+                more flexible.</li>
+              <li><strong>SEM / complex models:</strong> Prefer R (`lavaan`, `sem`, Bayesian alternatives).</li>
+              <li><strong>Mixed-effects models:</strong> R (lme4, nlme) is the standard; SPSS Mixed procedure exists but
+                R provides richer diagnostics.</li>
+              <li><strong>Machine learning / predictive models:</strong> R (tidymodels, caret, mlr3) or Python; SPSS has
+                Modeler but it's less flexible and often commercial.</li>
+            </ul>
 
-          <h2>Learning curve & practical tips for students</h2>
-          <p><strong>If you’re new:</strong> start with SPSS for quick wins (descriptives, tables) and begin learning R in parallel. Aim to reproduce one SPSS output in R each week — this accelerates transfer of understanding and builds reproducibility habits.</p>
-          <p><strong>Recommended learning path for R:</strong></p>
-          <ol>
-            <li>R basics: RStudio, R scripts, importing data (`readr`, `haven`).</li>
-            <li>Tidyverse: `dplyr` for cleaning, `ggplot2` for plots.</li>
-            <li>Statistical modelling: `stats` package basics, then `lme4`, `lavaan` or `brms` as required.</li>
-            <li>Reproducible reporting: R Markdown / Quarto, knitting to Word/PDF/HTML.</li>
-            <li>Version control: Git basics with GitHub/GitLab for backups and collaboration.</li>
-          </ol>
+            <h2>Learning curve & practical tips for students</h2>
+            <p><strong>If you’re new:</strong> start with SPSS for quick wins (descriptives, tables) and begin learning
+              R in parallel. Aim to reproduce one SPSS output in R each week — this accelerates transfer of
+              understanding and builds reproducibility habits.</p>
+            <p><strong>Recommended learning path for R:</strong></p>
+            <ol>
+              <li>R basics: RStudio, R scripts, importing data (`readr`, `haven`).</li>
+              <li>Tidyverse: `dplyr` for cleaning, `ggplot2` for plots.</li>
+              <li>Statistical modelling: `stats` package basics, then `lme4`, `lavaan` or `brms` as required.</li>
+              <li>Reproducible reporting: R Markdown / Quarto, knitting to Word/PDF/HTML.</li>
+              <li>Version control: Git basics with GitHub/GitLab for backups and collaboration.</li>
+            </ol>
 
-          <h2>Practical checklist before you pick</h2>
-          <ul>
-            <li>Does your supervisor insist on a specific tool? If yes, record their expectations and plan reproducibility steps.</li>
-            <li>Will your study require advanced methods (SEM, multilevel, Bayesian)? If yes, prefer R.</li>
-            <li>Do you have access to SPSS license and lab support? If yes and your analysis is simple, SPSS can work — but keep syntax files.</li>
-            <li>Are you willing to invest time to learn scripting for long-term benefits? If yes, R is the better investment.</li>
-          </ul>
+            <h2>Practical checklist before you pick</h2>
+            <ul>
+              <li>Does your supervisor insist on a specific tool? If yes, record their expectations and plan
+                reproducibility steps.</li>
+              <li>Will your study require advanced methods (SEM, multilevel, Bayesian)? If yes, prefer R.</li>
+              <li>Do you have access to SPSS license and lab support? If yes and your analysis is simple, SPSS can work
+                — but keep syntax files.</li>
+              <li>Are you willing to invest time to learn scripting for long-term benefits? If yes, R is the better
+                investment.</li>
+            </ul>
 
-          <h2>Resources & starting points</h2>
-          <ul>
-            <li><strong>R basics:</strong> “R for Data Science” (online book) — excellent for tidyverse workflow.</li>
-            <li><strong>RStudio IDE:</strong> Use RStudio Desktop (free) to manage projects and R Markdown.</li>
-            <li><strong>SPSS reproducibility:</strong> Always use Paste to Syntax and save `.sps` files; export outputs and include syntax in appendices.</li>
-            <li><strong>Reading:</strong> Tutorials on `lavaan`, `lme4`, `brms` for advanced modelling.</li>
-          </ul>
+            <h2>Resources & starting points</h2>
+            <ul>
+              <li><strong>R basics:</strong> “R for Data Science” (online book) — excellent for tidyverse workflow.</li>
+              <li><strong>RStudio IDE:</strong> Use RStudio Desktop (free) to manage projects and R Markdown.</li>
+              <li><strong>SPSS reproducibility:</strong> Always use Paste to Syntax and save `.sps` files; export
+                outputs and include syntax in appendices.</li>
+              <li><strong>Reading:</strong> Tutorials on `lavaan`, `lme4`, `brms` for advanced modelling.</li>
+            </ul>
 
-          <h2>Final recommendation</h2>
-          <p class="muted">R provides better reproducibility, modern methods, and long-term portability — making it the ideal choice for research-oriented PhD theses. SPSS remains useful for rapid, GUI-driven tasks and when institutional constraints or supervisor preferences demand it. The optimal approach for many students is a hybrid workflow: use SPSS for quick checks and R for final analyses, writing, and reproducible reporting.</p>
+            <h2>Final recommendation</h2>
+            <p class="muted">R provides better reproducibility, modern methods, and long-term portability — making it
+              the ideal choice for research-oriented PhD theses. SPSS remains useful for rapid, GUI-driven tasks and
+              when institutional constraints or supervisor preferences demand it. The optimal approach for many students
+              is a hybrid workflow: use SPSS for quick checks and R for final analyses, writing, and reproducible
+              reporting.</p>
 
-          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-            <a class="btn btn-accent" href="/services.html#analysis"><i class="fa-solid fa-chart-line"></i>&nbsp;Get help with thesis analysis</a>
-            <a class="btn btn-ghost" href="/contact.html"><i class="fa-solid fa-comments"></i>&nbsp;Book a quick consultation</a>
-          </div>
+            <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a class="btn btn-accent" href="/services.html#analysis"><i class="fa-solid fa-chart-line"></i>&nbsp;Get
+                help with thesis analysis</a>
+              <a class="btn btn-ghost" href="/contact.html"><i class="fa-solid fa-comments"></i>&nbsp;Book a quick
+                consultation</a>
+            </div>
 
-          <hr style="margin:18px 0">
+            <hr style="margin:18px 0">
 
-          <h3>Short FAQ</h3>
-          <p><strong>Q:</strong> Can I convert SPSS output into R? <br><strong>A:</strong> Yes — you can import `.sav` files into R using the `haven` package and reproduce tables/figures; saving SPSS syntax helps the transition.</p>
+            <h3>Short FAQ</h3>
+            <p><strong>Q:</strong> Can I convert SPSS output into R? <br><strong>A:</strong> Yes — you can import `.sav`
+              files into R using the `haven` package and reproduce tables/figures; saving SPSS syntax helps the
+              transition.</p>
 
-          <p><strong>Q:</strong> I have no time to learn R — is that ok? <br><strong>A:</strong> It’s acceptable for simple theses, but ask your supervisor to require syntax files for transparency and consider outsourcing complex analyses to an experienced R user if budgets allow.</p>
+            <p><strong>Q:</strong> I have no time to learn R — is that ok? <br><strong>A:</strong> It’s acceptable for
+              simple theses, but ask your supervisor to require syntax files for transparency and consider outsourcing
+              complex analyses to an experienced R user if budgets allow.</p>
 
-          <p style="margin-top:14px" class="small muted">If you want, we can run your analyses and provide thesis-ready tables and interpretation.</p>
-        </article>
-      </div>
-    </section>
+            <p style="margin-top:14px" class="small muted">If you want, we can run your analyses and provide
+              thesis-ready tables and interpretation.</p>
+          </article>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -197,7 +282,8 @@
     <div class="container footer-grid-dark">
       <div class="col about">
         <h3 id="footer-heading" class="footer-title">PhD Shodh</h3>
-        <p class="small muted">Expert PhD guidance across India — from proposal to viva. Confidential, milestone-driven and research-ethical mentorship.</p>
+        <p class="small muted">Expert PhD guidance across India — from proposal to viva. Confidential, milestone-driven
+          and research-ethical mentorship.</p>
 
         <ul class="contact-list" aria-label="contact details">
           <li><i class="fa-solid fa-envelope"></i> <a href="mailto:samay25@gmail.com">samay25@gmail.com</a></li>
@@ -230,7 +316,8 @@
           <img src="assets/images/stage-abstract.svg" alt="Abstract icon" class="stage-img" loading="lazy">
           <div class="stage-body">
             <h5>Abstract</h5>
-            <p class="small muted">Concise summary of objectives, research questions and key findings, crafted from your chapters or proposal.</p>
+            <p class="small muted">Concise summary of objectives, research questions and key findings, crafted from your
+              chapters or proposal.</p>
           </div>
         </div>
 
@@ -238,7 +325,8 @@
           <img src="assets/images/stage-intro.svg" alt="Introduction icon" class="stage-img" loading="lazy">
           <div class="stage-body">
             <h5>Introduction</h5>
-            <p class="small muted">Problem statement, knowledge gap, significance and hypothesis aligned to your university format.</p>
+            <p class="small muted">Problem statement, knowledge gap, significance and hypothesis aligned to your
+              university format.</p>
           </div>
         </div>
 
@@ -246,7 +334,8 @@
           <img src="assets/images/stage-lit.svg" alt="Literature review icon" class="stage-img" loading="lazy">
           <div class="stage-body">
             <h5>Literature review</h5>
-            <p class="small muted">Curated references and structured review with correct citation style and relevance checks.</p>
+            <p class="small muted">Curated references and structured review with correct citation style and relevance
+              checks.</p>
           </div>
         </div>
       </div>
@@ -257,30 +346,36 @@
         <div class="mini-card">
           <div class="mini-card-left">
             <svg width="120" height="80" viewBox="0 0 120 80" class="mini-graph" aria-hidden="true">
-              <rect x="0" y="0" width="120" height="80" rx="6" fill="#06153a"/>
+              <rect x="0" y="0" width="120" height="80" rx="6" fill="#06153a" />
               <g transform="translate(8,12)" fill="none" stroke="#FF6D00" stroke-width="2">
-                <polyline points="0,50 12,36 24,44 36,28 48,34 60,18 72,28 84,10 96,22" stroke-linejoin="round" stroke-linecap="round"></polyline>
+                <polyline points="0,50 12,36 24,44 36,28 48,34 60,18 72,28 84,10 96,22" stroke-linejoin="round"
+                  stroke-linecap="round"></polyline>
               </g>
             </svg>
           </div>
 
           <div class="mini-card-right">
-            <p class="small muted">We provide method selection (qual/quant), instrument design and expert SPSS/R analysis with visuals and interpretation.</p>
-            <p style="margin-top:8px"><a class="btn btn-ghost" href="/services.html#analysis"><i class="fa-solid fa-chart-pie"></i>&nbsp;See analysis services</a></p>
+            <p class="small muted">We provide method selection (qual/quant), instrument design and expert SPSS/R
+              analysis with visuals and interpretation.</p>
+            <p style="margin-top:8px"><a class="btn btn-ghost" href="/services.html#analysis"><i
+                  class="fa-solid fa-chart-pie"></i>&nbsp;See analysis services</a></p>
           </div>
         </div>
 
         <div style="margin-top:12px">
           <h5 style="margin:0 0 6px 0">Get sample chapter</h5>
-          <p class="small muted">Download a sample methodology chapter to see our analysis template and figure styles.</p>
-          <a class="btn btn-accent" href="/contact.html" style="margin-top:8px"><i class="fa-solid fa-download"></i>&nbsp;Request sample</a>
+          <p class="small muted">Download a sample methodology chapter to see our analysis template and figure styles.
+          </p>
+          <a class="btn btn-accent" href="/contact.html" style="margin-top:8px"><i
+              class="fa-solid fa-download"></i>&nbsp;Request sample</a>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
       <div class="bottom-left">
-        <small class="small muted">© <span id="year-footer"></span> PhD Shodh. All Rights Reserved. <span class="sep">|</span> <a href="/terms.html">Terms</a></small>
+        <small class="small muted">© <span id="year-footer"></span> PhD Shodh. All Rights Reserved. <span
+            class="sep">|</span> <a href="/terms.html">Terms</a></small>
       </div>
       <div class="bottom-right">
         <small class="small muted">Designed for students • <a href="/sitemap.xml">Sitemap</a></small>
@@ -288,12 +383,15 @@
     </div>
   </footer>
 
-  <a class="whatsapp-fab" href="https://wa.me/919406906110?text=Hi%20PhD%20Shodh%2C%20I%20need%20help%20with%20my%20thesis%20analysis" target="_blank" rel="noopener noreferrer" aria-label="Chat with PhD Shodh on WhatsApp">
+  <a class="whatsapp-fab"
+    href="https://wa.me/919406906110?text=Hi%20PhD%20Shodh%2C%20I%20need%20help%20with%20my%20thesis%20analysis"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with PhD Shodh on WhatsApp">
     <span class="fab-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
     <span class="fab-text">Chat</span>
   </a>
 
-  <script> (function(){ var y2=document.getElementById('year-footer'); if(y2)y2.textContent=new Date().getFullYear(); const btn=document.getElementById('nav-toggle'); const navList=document.getElementById('nav-list'); if(!btn||!navList) return; btn.addEventListener('click', function(){ const open = navList.classList.toggle('show'); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }); })(); </script>
+  <script> (function () { var y2 = document.getElementById('year-footer'); if (y2) y2.textContent = new Date().getFullYear(); const btn = document.getElementById('nav-toggle'); const navList = document.getElementById('nav-list'); if (!btn || !navList) return; btn.addEventListener('click', function () { const open = navList.classList.toggle('show'); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }); })(); </script>
   <script src="assets/js/main.js" defer></script>
 </body>
+
 </html>
